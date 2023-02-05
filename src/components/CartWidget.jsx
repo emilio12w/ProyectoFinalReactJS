@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { faBeer } from '@fortawesome/free-solid-svg-icons';
 
 import './styles/CartWidget.css';
+import { CartContext } from '../context/CartContext';
 
 const CartWidget = () => {
+
+  const cartContext = useContext(CartContext);
+  const { cart } = cartContext;
+
   return (
     <div className="cart-widget">
-      <FontAwesomeIcon icon={faCartPlus}  size="2x" color="white"/>
-      <div className="qty-display">0</div>
+      <FontAwesomeIcon icon={faBeer} size="2x" color="white" />
+      <div className="qty-display">{cart.length}</div>
     </div>
   );
 };

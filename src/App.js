@@ -1,13 +1,20 @@
 import React from 'react';
-import NavBar from './components/NavBar.jsx';
-import Hero from './components/Hero.jsx';
+import CartProvider from './context/CartContext.js';
+import AppRouter from './routes/AppRouter.js';
+
 import './style.css';
 
+
 export default function App() {
-  return (
+
+
+  return (    
     <>
-      <NavBar background={'transparent'} />
-      <Hero title="El mejor trago" />
+      <CartProvider>
+
+        <AppRouter />
+
+      </CartProvider> 
     </>
   );
 }

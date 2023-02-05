@@ -35,18 +35,7 @@
   max-width: 360px;
 }
 
-.button-primary {
-  background-color: var(--pimary-color);
-  border: none;
-  font-family: var(--mulish-font);
-  font-weight: 700;
-  font-size: 1rem;
-  margin: 20px auto;
-  width: 112px;
-  height: 36px;
-  cursor: pointer;
-}
-
+/*Voy a incluir mis mediaqueries acá*/
 
 @media only screen and (min-width: 800px) {
   .hero-container {

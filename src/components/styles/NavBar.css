@@ -9,7 +9,8 @@
   align-items: center;
   padding: 20px;
   width: 100%;
-  max-width: 1024;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .logo-container {
@@ -20,6 +21,16 @@
   justify-self: center;
 }
 
+.logo-container {
+  grid-column: 1 / span 2;
+  grid-row: first-line / 1;
+  padding-top: 3px;
+  cursor: pointer;
+  justify-self: center;
+}
+.logo-container img {
+  width: 200px;
+}
 .menu-button {
   justify-self: center;
   cursor: pointer;
@@ -55,6 +66,7 @@ nav {
   min-width: 96px;
 }
 
+/*backgrounds*/
 .background--transparent {
   background-color: transparent;
 }
@@ -76,6 +88,8 @@ nav {
   transition: all 0.4s ease-in-out 0s;
 }
 
+/*Voy a incluir mis mediaqueries acá*/
+
 @media only screen and (min-width: 800px) {
   nav {
     display: block;
@@ -96,9 +110,4 @@ nav {
     grid-column: auto;
     grid-row: auto;
   }
-}
-
-img {
-  height: 150px;
-  width: 150px;
 }
